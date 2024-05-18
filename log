@@ -65,3 +65,14 @@ Sat 18 May 2024 04:37:19 PM UTC:
  tests:  5|3
 total_score: 35/70
 fc79989
+Sat 18 May 2024 04:37:44 PM UTC: 
+ sudoku.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_final’:
+sudoku.c:106:1: error: control reaches end of non-void function [-Werror=return-type]
+  106 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+8f5faa7
