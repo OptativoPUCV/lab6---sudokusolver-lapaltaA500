@@ -103,6 +103,7 @@ int is_final(Node* n)
          if(n->sudo[x][y] == 0) return 0;
       }
    }
+   return 1;
 }
 
 Node* DFS(Node* initial, int* cont){
