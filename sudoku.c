@@ -60,11 +60,11 @@ List* get_adj_nodes(Node* n)
          {
             for(int i = 1 ; i <= 9 ; i++)
             {
-               Node* adj = copy(n);
-               adj->sudo[x][y] = i;
-               if(is_valid(adj))
+               Node* adyacente = copy(n);
+               adyacente->sudo[x][y] = i;
+               if(is_valid(adyacente))
                {
-                  pushBack(list, adj);
+                  pushBack(list, adyacente);
                }
             }
          }
