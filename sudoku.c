@@ -65,7 +65,7 @@ int is_valid(Node* n)
          else num[n->sudo[a][b]] = 1;
       }
    }
-   
+   return 1;
 }
 
 
