@@ -55,6 +55,17 @@ int is_valid(Node* n)
          else num[n->sudo[a][b]] = 1;
       }
    }
+   for (int b = 0; b < 9; b++)
+   {
+      int num[10] = {0};
+      for (int a = 0; a < 9; a++)
+      {
+         if (n->sudo[a][b] != 0 && num[n->sudo[a][b]] == 1) return 0;
+
+         else num[n->sudo[a][b]] = 1;
+      }
+   }
+   
 }
 
 
